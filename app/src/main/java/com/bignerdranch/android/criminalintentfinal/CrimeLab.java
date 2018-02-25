@@ -1,7 +1,7 @@
 package com.bignerdranch.android.criminalintentfinal;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +38,7 @@ public class CrimeLab {
     public Crime getCrime(UUID id)  {
         for (Crime crime : mCrimes) {
             if(crime.getId().equals(id)) {
-
+                return crime;
             }
         }
         return null;
