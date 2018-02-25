@@ -1,5 +1,5 @@
 package com.bignerdranch.android.criminalintentfinal;
-
+import android.support.v4.app.Fragment;
 //import android.app.Fragment;
 import android.support.v4.app.Fragment;
 
