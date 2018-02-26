@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CriminalIntentFinal.iml" filepath="$PROJECT_DIR$/CriminalIntentFinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComputerBuildCheckList.iml" filepath="$PROJECT_DIR$/ComputerBuildCheckList.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
