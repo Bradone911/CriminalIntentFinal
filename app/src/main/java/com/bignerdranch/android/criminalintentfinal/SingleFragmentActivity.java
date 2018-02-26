@@ -25,5 +25,4 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
 //        above 3 lines says create a new fragment transaction, include one add operation in it, then commit it
         }
     }
-
 }
