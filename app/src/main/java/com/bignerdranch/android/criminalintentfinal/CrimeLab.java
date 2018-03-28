@@ -1,7 +1,10 @@
 package com.bignerdranch.android.criminalintentfinal;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 
+
+import com.bignerdranch.android.criminalintentfinal.database.CrimeBaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +15,8 @@ public class CrimeLab {
     private static CrimeLab sCrimeLab;
 
     private List<Crime> mCrimes;
+    private Context mContext;
+    private SQLiteDatabase mDatabase;
 
     public static CrimeLab get(Context context) {
         if (sCrimeLab == null) {
@@ -20,8 +25,11 @@ public class CrimeLab {
 
         return sCrimeLab;
     }
-    //       loaded model layer with 100 crimes
+
     private CrimeLab(Context context)   {
+        mContext = context.getApplicationContext();
+        mDatabase = new CrimeBaseHelper(mContext)
+                .getWritableDatabase();
         mCrimes = new ArrayList<>();
 //        for (int i = 0; i < 100; i++)   {
 //            Crime crime = new Crime();
