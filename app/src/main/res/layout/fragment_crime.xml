@@ -3,7 +3,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp">
+
+
 
     <TextView
         style="?android:listSeparatorTextViewStyle"
@@ -47,4 +50,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/crime_report_text"/>
+
 </LinearLayout>
